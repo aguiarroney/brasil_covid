@@ -1,4 +1,4 @@
-class State {
+class StateModel {
   final int id;
   final int cases;
   final int suspects;
@@ -8,7 +8,7 @@ class State {
   final String name;
   final String dateTime;
 
-  State(
+  StateModel(
       {this.id,
       this.cases,
       this.suspects,
@@ -18,8 +18,8 @@ class State {
       this.name,
       this.dateTime});
 
-  factory State.fromJson(Map<String, dynamic> json) {
-    return State(
+  factory StateModel.fromJson(Map<String, dynamic> json) {
+    return StateModel(
       id: json["uid"],
       uf: json["uf"],
       name: json["state"],
