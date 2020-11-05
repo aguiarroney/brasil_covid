@@ -29,7 +29,7 @@ class ApiService {
     var decoded = json.decode(response.body);
 
     estado = State.fromJson(decoded);
-    print("!!!! estado ${estado.deaths}");
+    // print("!!!! estado ${estado.deaths}");
     return estado;
   }
 
