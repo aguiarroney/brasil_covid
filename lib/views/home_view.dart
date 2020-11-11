@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
     StateBloc stateBloc = StateBloc();
     stateBloc.getStateList();
     return Scaffold(
-      body: customView(context, stateBloc),
+      body: CustomView(stateBloc: stateBloc),
     );
   }
 }
