@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData defaultTheme() => ThemeData(
-      primaryColor: Colors.blue[500],
+      primaryColor: Colors.grey,
       accentColor: Colors.white,
       textTheme: TextTheme(
         headline1: GoogleFonts.inter(

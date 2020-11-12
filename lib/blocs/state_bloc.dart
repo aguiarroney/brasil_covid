@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:brasil_covid/models/states_model.dart';
 import 'package:brasil_covid/services/api_service.dart';
-import 'package:flutter/cupertino.dart';
 
 class StateBloc {
   ApiService _api;
@@ -22,5 +21,9 @@ class StateBloc {
       inList.add(value);
       return value;
     });
+  }
+
+  void dispose() {
+    _statesController.close();
   }
 }

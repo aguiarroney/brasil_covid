@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class StateModel {
   final int id;
   final int cases;
